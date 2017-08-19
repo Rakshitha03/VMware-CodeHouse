@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+.main-container .content-container .content-area {
+
+    padding: 0 !important;
+}
+
+/*.main-container .header {
+	background: transparent !important;
+    overflow: visible !important;
+}
+*/
+
+.content-container {
+    background: #efefe8;
+}
+
+nav {
+    display: none !important;
+
+}
+
+.sub-nav, .subnav {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.0357142857rem;
+    background-color: #dbdbd2;
+}
+
+/** cannot use with row **/
+.center-container {
+    margin: 10px auto 10px auto; 
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.more-space {
+    margin: 50px 50px 80px 50px !important;
+    
+}
+
+

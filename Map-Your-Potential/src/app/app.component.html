@@ -1,0 +1,52 @@
+<!-- display all contents (header/main/footer)  -->
+
+<clr-main-container>
+<div class="content-container">
+    <div class="content-area">
+    <clr-header class="headerImage ">
+      <div class="branding">
+        <a href="#">
+          <clr-icon shape="home" size="36"></clr-icon>    
+        </a>
+
+      </div>
+    
+    <div class=" header-contents  text-center"> 
+      <a href="#" class="title">
+        <h1><span>{{title}} </span></h1> 
+      </a>
+      <div class="header-buttons">
+        <!--<p> An informative app that (......short intro of the app........) </p> -->
+
+          
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-ms-12"></div>
+          <div class="col-lg-3 col-md-3 col-ms-12">
+            <a href="home#assessmentpane"><button class="btn assessment" >Assessment</button></a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-ms-12">
+            <a href="about"><button class="btn position" >All Positions</button></a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-ms-12"></div>
+        </div>
+      </div>
+    </div>
+     
+  </clr-header>
+  
+  <nav class="sub-nav" [clr-nav-level]="1">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active">Try Assessment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active">All Positions</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</clr-main-container>

@@ -1,0 +1,89 @@
+
+
+  <button class="btn btn-primary assessment-btn col-lg-12 col-md-12 col-ms-12" (click)="onOpen(true);clearData();">Take the Assessmenet</button>
+
+
+<clr-modal class="form" [formGroup]="assessmentForm" (ngSubmit)="onSubmit()" [(clrModalOpen)]="open" [clrModalSize]="'lg'" [clrModalStaticBackdrop]="true">
+    
+
+    <!-- assessmeent part -->
+    <!-- <h3 *ngIf="showResult && selectedQuestion" class="modal-title ">{{selectedQuestion.question}}</h3> -->
+
+     <div *ngIf="showResult && selectedQuestion" class="modal-body row  flex-items-xs-middle">
+ 
+        <h3 class="questionTitle col-xs-6">{{selectedQuestion.question}}</h3>
+        <div class="answers col-xs-6">
+          <div *ngFor="let select of selections" class="radio"> 
+            <input type="radio" [(ngModel)]="selections.answer" (click)="increaseProgressBar();" formControlName="answer" name="answer" id="{{select.key}}" value="{{select.key}}">
+              <label class="choice" for="{{select.key}}"> {{select.key}}. {{select.value}} </label>
+          </div>
+        </div>
+    
+    </div> 
+   
+    <div *ngIf="showResult" class="modal-footer">
+          <div class="progress flash progress-fade labeled">
+            <progress value="{{progressVal}}" max="100" data-displayval="progressVal + %" ></progress>
+              <span>{{progressVal}}%</span>
+          </div>
+          <div *ngIf="selectedQuestion && selectedQuestion.id != '18' ">
+              <button type="button" class="btn btn-primary" (click)="onNext(selectedQuestion.id, selections.answer);" [disabled]="selections.answer!= 'A' && selections.answer!= 'B' && selections.answer!= 'C' && selections.answer!= 'D'">Next</button>
+          </div>
+          <div *ngIf="selectedQuestion && selectedQuestion.id == '18'">
+              <button type="submit" class="btn btn-success" (click)="onSubmit(selectedQuestion.id, selections.answer); showResult=false" [disabled]="selections.answer!= 'A' && selections.answer!= 'B' && selections.answer!= 'C' && selections.answer!= 'D'" >Submit</button>
+          </div> 
+    </div>
+
+    
+    <div *ngIf="loading" class="modal-body loadding-container">
+
+        <span class="spinner spinner-md">
+            Loading...
+        </span>
+   
+        <span>
+            calculating your results...
+        </span>
+      
+    </div>
+
+   
+
+    <!-- assessment result -->
+    <h3 *ngIf="!showResult" class="modal-title ">Assessment Result</h3>
+
+    <div *ngIf="!showResult &&!loading" class="modal-body">
+
+        <div *ngFor="let match of matches">
+            <div class="row">
+                <div class="col-xs-10">
+                    
+                    <h4>
+                       Recommend Position :
+                        <b>{{match.name}}</b> </h4>
+                     
+                        {{match.intro}}
+                    
+                </div>
+                <div class="col-xs-2 flex-xs-bottom">
+                   
+                        <!-- <button type="submit" class="btn  btn-link" (click)="open=false;showResult=true;learnMore(match);">Learn More</button> -->
+                        <button type="submit" class="btn btn-link" (click)="learnMore(match);">Learn More</button>
+                   
+                </div>
+            </div>
+            <br>
+        </div>   
+    </div>
+    <div *ngIf="!showResult && !loading && !emailSent" class="modal-footer">
+        <b>Want a copy of the result?</b>
+        <input type="text" id="formFields_6" placeholder="Email">
+        <!-- <button type="submit" class="btn  btn-link" (click)="open=false;showResult=true;learnMore(match);">Learn More</button> -->
+        <button type="submit" class="btn btn-primary" (click)="sendEmail()">Send Result</button>
+    </div>
+    <div *ngIf="!showResult && !loading && emailSent" class="modal-footer">
+        Email Sent!
+    </div>
+
+
+</clr-modal>

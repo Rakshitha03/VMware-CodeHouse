@@ -1,0 +1,116 @@
+{
+    "data":[
+        {
+            "category": "11",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 2},
+                        {"name": "Associate's degree", "value": 8},
+                        {"name": "Bachelor's degree", "value": 68},
+                        {"name": "Master's degree", "value": 17},
+                        {"name": "Doctorate degree", "value": 5}
+                    ] 
+                }
+        },
+        {
+            "category": "12",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 20},
+                        {"name": "Associate's degree", "value": 200},
+                        {"name": "Bachelor's degree", "value": 900},
+                        {"name": "Master's degree", "value": 200},
+                        {"name": "Doctorate degree", "value": 10}
+                    ] 
+                }
+        },
+        {
+            "category": "13",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 100},
+                        {"name": "Associate's degree", "value": 300},
+                        {"name": "Bachelor's degree", "value": 900},
+                        {"name": "Master's degree", "value": 700},
+                        {"name": "Doctorate degree", "value": 500}
+                    ] 
+                }
+        },
+        {
+            "category": "14",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 10},
+                        {"name": "Associate's degree", "value": 50},
+                        {"name": "Bachelor's degree", "value": 100},
+                        {"name": "Master's degree", "value": 700},
+                        {"name": "Doctorate degree", "value": 600}
+                    ] 
+                }
+        },
+        {
+            "category": "15",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 50},
+                        {"name": "Associate's degree", "value": 300},
+                        {"name": "Bachelor's degree", "value": 400},
+                        {"name": "Master's degree", "value": 900},
+                        {"name": "Doctorate degree", "value": 600}
+                    ] 
+                }
+        },
+        {
+            "category": "16",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 50},
+                        {"name": "Associate's degree", "value": 100},
+                        {"name": "Bachelor's degree", "value": 600},
+                        {"name": "Master's degree", "value": 800},
+                        {"name": "Doctorate degree", "value": 300}
+                    ] 
+                }
+        },
+        {
+            "category": "17",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 20},
+                        {"name": "Associate's degree", "value": 100},
+                        {"name": "Bachelor's degree", "value": 500},
+                        {"name": "Master's degree", "value": 800},
+                        {"name": "Doctorate degree", "value": 200}
+                    ] 
+                }
+        },
+        {
+            "category": "18",
+            "statistics": 
+                {
+                    "stat-name": "edu-highest",
+                    "data_values": [
+                        {"name": "High school diploma", "value": 20},
+                        {"name": "Associate's degree", "value": 100},
+                        {"name": "Bachelor's degree", "value": 500},
+                        {"name": "Master's degree", "value": 800},
+                        {"name": "Doctorate degree", "value": 200}
+                    ] 
+                }
+        }
+    ]
+}

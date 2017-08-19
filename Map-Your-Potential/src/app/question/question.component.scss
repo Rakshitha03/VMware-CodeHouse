@@ -1,0 +1,48 @@
+// Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+// This software is released under MIT license.
+// The full license information can be found in LICENSE in the root directory of this project.
+
+.assessment-btn {
+    margin-top: 30px;
+    height: 4em;
+}
+
+.modal-title, .modal-body {
+    text-align: left;
+}
+
+.radio {
+	margin: 10px;
+	font-size: 1.5em;
+}
+
+.choice {
+	width:100%;
+}
+
+.choice:hover {
+    color:#f47735;
+    transition: color .25s ease-in-out;
+}
+
+.questionTitle{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.answers{
+	padding-left: 30px;
+	//padding-right: 30px;
+}
+
+.loadding-container{
+	padding: 40px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .assessment-btn {
+	    font-size: 16px;
+	    width: 30em;  
+	}
+}

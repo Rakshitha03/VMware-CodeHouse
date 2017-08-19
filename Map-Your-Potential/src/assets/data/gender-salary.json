@@ -1,0 +1,124 @@
+{
+    "data":[
+        {
+            "category": "11",
+            "statistics": 
+                {
+                    "stat-name": "salary - hourly",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "12",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "13",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "14",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "15",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "16",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "17",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        },
+        {
+            "category": "18",
+            "statistics": 
+                {
+                    "stat-name": "salary",
+                    "data_values": [
+                        {"year": "2006", "men": 37.7, "women": 32.2},
+                        {"year": "2008", "men": 34.5, "women": 28.6},
+                        {"year": "2010", "men": 36.6, "women": 30.4},
+                        {"year": "2012", "men": 42.5, "women": 36.2},
+                        {"year": "2014", "men": 44.1, "women": 41.7},
+                        {"year": "2016", "men": 47.5, "women": 46.5}
+                    ] 
+                }
+        }
+    ]
+}

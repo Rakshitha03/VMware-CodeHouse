@@ -1,0 +1,23 @@
+<!--
+  ~ Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+  ~ This software is released under MIT license.
+  ~ The full license information can be found in LICENSE in the root directory of this project.
+  -->
+<div class="row more-space">
+      <div *ngFor="let position of positions" class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <a href="#" [routerLink]="['/detail', position.id]" class="card clickable">
+              <div class="card-img darken" > 
+                  <img alt="{{position.name}} image" src={{position.imageUrl}} >
+              </div>
+              <div class="card-block">
+                <h2 class="job-title">
+                    {{position.name}}
+                </h2>
+                <p class="card-text">
+                    {{position.intro}}
+                </p>
+              </div>
+          </a>
+      </div>
+    
+</div>

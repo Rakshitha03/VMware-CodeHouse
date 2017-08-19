@@ -1,0 +1,140 @@
+ <div class="content-container">
+    <div class="content-area more-space">
+		<div class="container">
+				<div class="center-container">
+					<button class="btn btn-outline" (click)="overview=true;requirements=false;markets=false">Overview</button>
+					<button class="btn btn-success-outline" (click)="overview=false;requirements=true;markets=false">Requirements</button>
+					<button class="btn btn-info-outline" (click)="overview=false;requirements=false;markets=true">Statistics</button>
+
+					</div>
+		</div>
+		<div *ngIf="position">
+			<div class="container">
+				<div class="position-name"> 
+			    	<h1>{{position.name}}</h1>
+			    </div>
+			</div>
+			<div class="container" *ngIf="overview && position">
+				<h4 class="position-detail" [innerHTML]=position.detail>{{position.detail}}
+				</h4> 
+				<h3 > What Does {{position.name}} Do ?</h3> 
+				<h4 class="position-detail" [innerHTML]=position.whatdoesitdo>{{position.whatdoesitdo}} </h4>
+				<br>
+				<h3> Further Reading:</h3> 
+				<p [innerHTML]=position.futherReading>{{position.futherReading}} </p>
+	
+					<!-- <ul class="list"><li> <a href="https://www.quora.com/What-do-software-engineers-do" target="_blank">What do software engineers do?</a></li><li><a href="https://en.wikipedia.org/wiki/Software_engineer" target="_blank">Software Engineer</a></li><li><a href="https://www.securityinnovationeurope.com/blog/page/40-blogs-every-software-developer-should-be-reading" target="_blank">40 blogs every Software Engineer Should be reading</a></li></ul> -->
+
+					<ul class="list"><li> <a href="https://www.quora.com/What-do-software-engineers-do" target="_blank">What do {{position.name}} do?</a></li><li> <a href="https://en.wikipedia.org/wiki/Software_engineer" target="_blank">{{position.name}}</a></li><li> <a href="https://www.securityinnovationeurope.com/blog/page/40-blogs-every-software-developer-should-be-reading" target="_blank">40 blogs every {{position.name}} Should be reading</a></li></ul>
+
+				<br>
+			</div> 
+			<div class="container" *ngIf="requirements && position">
+				<div class="container"> 
+					 <h3 class="position-tab-title">
+			            Highest Education Level
+			        </h3>
+			        <google-chart [data]="educationLevel"></google-chart> 
+				</div> 
+				<br>
+			</div>
+			<div class="container" *ngIf="markets && position">
+				<div class="container">
+					<h3 class="position-tab-title">
+			            Hourly Salary
+			        </h3>
+			        <google-chart [data]="hourlySalary"></google-chart>
+			        <br/><br/>
+			        <h3 class="position-tab-title">
+			            Annual Salary
+			        </h3>
+			        <google-chart [data]="annualSalary"></google-chart>
+			        <h3 class="position-tab-title">
+			            Top Payer - Hourly Salary
+			        </h3>
+			        <google-chart [data]="topPayerHourly"></google-chart>
+			        <br/><br/>
+			        <h3 class="position-tab-title">
+			            Top Payer - Annual Salary
+			        </h3>
+			        <google-chart [data]="topPayerAnnual"></google-chart>  
+			        <br/><br/>
+			        <h3 class="position-tab-title">
+			            Hourly Salary Comparison
+			        </h3>
+			        <google-chart [data]="salaryComparision"></google-chart>  
+			        <br/><br/>
+
+			        <h3 class="position-tab-title">
+			            Top Companies Recruiting for this Role
+			        </h3>
+			        <div class="row center-container">
+					    <div class="col-sm-2 col-md-2">
+					        <img src="https://regmedia.co.uk/2015/02/02/vmware_cloud_logo.jpg?x=1200&y=794" style="width:130px;height:100px;">
+					    </div>
+					    <div class="col-sm-2 col-md-2">
+				
+					        <img src="https://images.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" style="width:100px;height:100px;">
+					    </div>
+					    <div class="col-sm-2 col-md-2">
+					        
+					        <img src="https://avatars0.githubusercontent.com/u/698437?v=4&s=400" style="width:100px;height:100px;">
+					    </div>
+					    <div class="col-sm-2 col-md-2">
+					        
+					         <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" style="width:100px;height:100px;">
+					    </div>
+					    <div class="col-sm-2 col-md-2">
+					        
+					         <img src="https://seeklogo.com/images/P/pinterest-logo-8561DDA2E1-seeklogo.com.png" style="width:100px;height:100px;">
+					    </div>
+					    
+					</div>
+			        <br/><br/>
+
+				</div>
+
+				<div class="center-container">
+					<a id="show" class="btn btn-success-outline"(click)="searchSite();">Search for current jobs oppotunities</a>
+					
+				</div>
+				<br>
+			</div>
+			<div class="center-container">
+				<a id="show" (click)="goBack()" class="btn">Back to Previous Page</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--         <br />
+        <div class="position-tab-title">
+            Hourly Salary
+        </div>
+        <google-chart [data]="hourlySalary"></google-chart>
+        <br/><br/>
+        <div class="position-tab-title">
+            Annual Salary
+        </div>
+        <google-chart [data]="annualSalary"></google-chart>
+        <div class="position-tab-title">
+            Top Payer - Hourly Salary
+        </div>
+        <google-chart [data]="topPayerHourly"></google-chart>
+        <br/><br/>
+        <div class="position-tab-title">
+            Top Payer - Annual Salary
+        </div>
+        <google-chart [data]="topPayerAnnual"></google-chart>  
+        <br/><br/> -->
+        <!--  <div class="position-tab-title">
+            Highest Education Level
+        </div>
+        <google-chart [data]="educationLevel"></google-chart> 
+        <br/><br/>
+         <div>
+            Highest Education Level
+        </div>
+        <google-chart [data]="salaryComparision"></google-chart> 
+
+		<br><br><br><br><br> -->

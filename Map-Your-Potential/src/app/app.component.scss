@@ -1,0 +1,120 @@
+// Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+// This software is released under MIT license.
+// The full license information can be found in LICENSE in the root directory of this project.
+/*.clr-icon {
+  &.logo {
+    background-image: url(../images/logo.png);
+  }
+}*/
+.headerImage { 
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/header_new.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.assessment-btn {
+    margin-top: 30px;
+    height: 4em;
+}
+.modal-title, .modal-body {
+    text-align: left;
+}
+.radio {
+  margin: 10px;
+  font-size: 1.5em;
+}
+.choice {
+  width:100%;
+}
+.choice:hover {
+    color:#f47735;
+    transition: color .25s ease-in-out;
+}
+@media screen and (min-width: 480px) {
+    .assessment-btn {
+      font-size: 16px;
+      width: 30em;  
+  }
+}
+.text-center {
+    text-align: center !important;
+}
+.header-contents {
+    padding-left: 1.0714285714rem;
+    padding-right: 1.0714285714rem;
+}
+.headerImage .header-contents { 
+/*  position: absolute;
+  width: 100%;
+  margin: 190px auto !important;
+  text-align: left;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 8;
+    white-space: normal !important; 
+}
+.header-contents .title h1{
+    padding: 0;
+    margin: 0;
+    font-size: 42px;
+    color: #fff !important;
+    z-index: 7 !important;
+    text-shadow: 1px 1px 0px rgba(40,37,64,0.5);
+    font-weight: 100;
+}
+/*.header-contents .header-description p{ 
+    
+    font-style: italic;
+    text-shadow: 0 2px 2px #282540;
+    width: 100%;
+}*/
+
+.header-buttons {
+   padding: 30px;
+    margin: 0;
+}
+
+.assessment, .position {
+    color: white;
+    border-color: white;
+}
+
+.assessment:hover, .position:hover {
+    color: #007cbb;
+    border-color: #007cbb;
+}
+
+p {
+    text-rendering: optimizeLegibility;
+}
+a > clr-icon {
+    color:white;
+}
+a > clr-icon:hover {
+    text-decoration: underline;
+}
+ a:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 550px) {
+   h1 span { 
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 769px) {
+  h1 span { 
+    font-size: 60px;
+  }
+}

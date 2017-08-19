@@ -1,0 +1,163 @@
+<!--
+  ~ Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+  ~ This software is released under MIT license.
+  ~ The full license information can be found in LICENSE in the root directory of this project.
+  -->
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-ms-12">
+	    	<h3 class="description"> Map Your Potential is a career matching platform that helps people find their ideal career in technology. It accomplishes this in two ways. The first is by taking the career assessment test. Through a series of questions, we evaluate your compatibility with various <b>technical roles </b> and predict the top three possible matches. The second is by browsing through the different career profiles which contains numerous <b>informative graphs and statistics </b> about the roles. This is aimed at helping people understand and enter careers. We also have a <b> job posting section </b> which allows you to search for current opportunities in the field of your interest. 
+ </h3> 
+	    	<br><br><br>		</div>
+	</div>
+
+<div class="container" >
+	<div class="center-container">
+	
+		
+	
+					<app-barchart *ngIf="chartData" [data]="chartData"></app-barchart>
+	</div>
+</div>	
+</div>
+<div id="layout-container">
+		<section class="center-container" id="step1" >
+			<div class="step"> Step 1 </div><br>
+			<clr-icon shape="pencil" size="72"></clr-icon><h4 class="stepname"> Take our questionnaire </h4>
+			
+		</section>
+</div>
+<div id="layout1-container">
+		<section class="center-container" id="step2" >
+			<h3 class="step"> Step 2 </h3><br>
+			 <clr-icon shape="bullseye" size="72"></clr-icon><h4 class="stepname">  Explore your matches </h4>
+			
+		</section>
+</div>
+<div id="layout-container">
+		<section class="center-container" id="step3" >
+			<h3 class="step"> Step 3 </h3><br>
+			<clr-icon shape="bar-chart" size="72"></clr-icon><h4 class="stepname">  Learn about the positions </h4>
+			
+		</section>
+</div>
+<div id="layout1-container">
+		<section class="center-container" id="step4" >
+			<h3 class="step"> Step 4 </h3><br>
+			<clr-icon shape="flag" size="72"></clr-icon><h4 class="stepname">   Discover New Opportunities! </h4>
+			
+		</section>
+</div>
+<!-- 
+<div id="layout-container">
+	<div class="row">
+	    <div class="col-xs flex-xs-top">
+	        <div class="step">step 1</div>
+	    </div>
+	    <div class="col-xs flex-xs-middle">
+	        <h4 class="stepname"> Take our questionnaire </h4><br>
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	</div>
+</div>
+<div id="layout1-container">
+	<div class="row">
+	    <div class="col-xs flex-xs-top">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-middle">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-middle">
+	        <h4 class="stepname"> Take our questionnaire </h4><br>
+	    </div>
+	    <div class="col-xs flex-xs-top">
+	        <div class="step">step 2</div>
+	    </div>
+	</div>
+</div>
+<div id="layout-container">
+	<div class="row">
+	    <div class="col-xs flex-xs-top"></div>
+	    <div class="col-xs flex-xs-top">
+	    	<div class="step">step 3</div>
+	    </div>
+	    <div class="col-xs flex-xs-middle">
+	         <h4 class="stepname"> Take our questionnaire </h4><br>
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	</div>
+</div>
+<div id="layout1-container">
+	<div class="row">
+	    <div class="col-xs flex-xs-top">
+	        
+	    </div>
+	    <div class="col-xs flex-xs-middle">
+	        <h4 class="stepname"> Take our questionnaire </h4><br>
+	    </div>
+	    <div class="col-xs flex-xs-top">
+	        <div class="step">step 4</div>
+	    </div>
+	    <div class="col-xs flex-xs-bottom">
+	        
+	    </div>
+	</div>
+</div> -->
+
+
+<!-- <div id="layout-container">
+		<section class="center-container" id="step1" >
+			<h3> step 4</h3><br>
+			<h4> Take our questionnaire </h4>
+			
+		</section>
+</div>
+		<section class="center-container" id="step2">
+			<h3> step 2</h3><br>
+			<h4> Explore your matches </h4>
+			
+		</section>
+		<section class="center-container" id="step3">
+			<h3> step 3</h3> <br>
+			<h4> Learn about the positions </h4>
+			
+		</section>
+		<section class="center-container" id="step4">
+			<h3> step 4</h3> <br>
+			<h4> Discover new opportunities </h4>
+			
+		</section>
+	</div>
+</div>	 -->
+	<a name="assessmentpane"></a>
+	<div id="layout-container">
+		<div class="center-container questionnaire" >
+			<h2 class="stepname"> Ready to discover your potential? </h2>
+	 	<question></question>
+	</div>
+	</div>
+
+
+
+
+
+
